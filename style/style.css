@@ -11,8 +11,44 @@ html {
   height: 45rem;
 }
 
-.holiday-parent {
-  width: 65rem;
-  height: 45rem;
+.holiday-gallery {
+  position: relative;
+  margin: 2rem;
+}
+
+.holiday {
+  height: 20rem;
+  position: absolute;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  outline-offset: 1rem;
+}
+
+.diwalli {
+  top: 5rem;
+  left: 15%;
+}
+
+.CHRISTmas {
+  top: 2rem;
+  right: 0rem;
+}
+
+.cnewyear {
+  top: -10rem;
+  left: 8;
+}
+
+.holiday:hover {
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+  outline: 1rem solid purple;
+  z-index: 2;
+}
+
+.holiday-gallery:hover .holiday:not(:hover) {
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+  opacity: 0.5;
 }
 /*# sourceMappingURL=style.css.map */
